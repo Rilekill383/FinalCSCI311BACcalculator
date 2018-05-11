@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Should I drive tonight?</string>
+    <string name="Opening_statement">Hello, this is the BAC Calculator</string>
+    <string name="Weight_text">Weight(lbs.)</string>
+    <string name="Time_text">Time Elapsed(hrs.)</string>
+    <string name="Drink_text">Drinks consumed:</string>
+    <string name="splitbillText">Standard Drink?</string>
+    <string name="Tipoutputtext">Tip quantity($):</string>
+    <string name="SeekbarDisplay2">Wine</string>
+    <string name="BMItext">BAC:</string>
+    <string name="Calculatebutton">Calculate</string>
+    <string name="SeekbarDisplay">Male</string>
+    <string name="Secondbutton">Info</string>
+    <string name="SeekbarDisplay3">15% ABV</string>
+    <string name="S21">Beer</string>
+    <string name="S22">Wine</string>
+    <string name="S23">Liquour</string>
+</resources>

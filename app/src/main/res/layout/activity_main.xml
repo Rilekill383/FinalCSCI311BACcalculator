@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.baccalculator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Opening_statement"
+        android:textSize="26sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Opening_statement" />
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Opening_statement"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/Weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Weight_text"
+            android:textSize="27sp" />
+
+        <EditText
+            android:id="@+id/Weight_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/LL1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_text"
+            android:textSize="30sp"
+            android:id="@+id/Time_text" />
+
+        <EditText
+            android:id="@+id/Time_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL3"
+        android:layout_below="@id/LL2"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Drink_text"
+            android:textSize="30sp"
+            android:id="@+id/Drink_text" />
+
+        <EditText
+            android:id="@+id/Drink_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SeekbarDisplay"
+        android:layout_centerHorizontal="true"
+        android:max="1"
+        android:progress="0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SeekbarDisplay"
+        android:layout_below="@+id/LL3"
+        android:selectAllOnFocus="true"
+        android:text="@string/SeekbarDisplay"
+        android:textSize="20sp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splitbillText"
+        android:id="@+id/Standard_drink_Text"
+        android:layout_below="@id/seekbar1"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/SD_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/LL5"
+        android:layout_alignRight="@+id/LL5"
+        android:layout_below="@+id/seekbar1"
+        android:scaleX="2"
+        android:scaleY="2" />
+
+    <SeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SeekbarDisplay2"
+        android:layout_centerHorizontal="true"
+        android:max="2"
+        android:progress="1"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SeekbarDisplay2"
+        android:layout_below="@+id/SD_checkbox"
+        android:selectAllOnFocus="true"
+        android:text="@string/SeekbarDisplay2"
+        android:textSize="20sp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="visible" />
+
+    <SeekBar
+        android:id="@+id/seekbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SeekbarDisplay3"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:progress="15"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SeekbarDisplay3"
+        android:layout_below="@+id/seekbar2"
+        android:selectAllOnFocus="true"
+        android:text="@string/SeekbarDisplay3"
+        android:textSize="20sp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/LL4">
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/BMItext"
+            android:text="@string/BMItext"
+            android:textSize="26sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/BMI_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:ems="6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL4"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/LL5">
+
+        <Button
+            android:id="@+id/Calculatebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/Calculatebutton"
+            android:onClick="onClickBtn" />
+    </LinearLayout>
+
+</RelativeLayout>
